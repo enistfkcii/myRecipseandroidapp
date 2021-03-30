@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".Detail"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:background="#f1f1f1"
+
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolBar3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/ic_launcher_background"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme" />
+
+            <ImageView
+                android:id="@+id/favoriekle"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="-37dp"
+                app:srcCompat="@drawable/ic_favorite_border_black_24dp"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+
+                android:layout_margin="15dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                app:cardPreventCornerOverlap="false">
+
+                <ImageView
+                    android:id="@+id/resim"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+
+                    android:scaleType="centerCrop"
+                    tools:ignore="MissingConstraints" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="4dp"
+                app:cardPreventCornerOverlap="false">
+
+                <TextView
+                    android:id="@+id/yemekadi"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="10dp"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Yemek Adı"
+                    android:textSize="19sp"
+
+                    android:textStyle="bold"
+
+
+                    tools:ignore="MissingConstraints" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="4dp"
+                app:cardPreventCornerOverlap="false">
+
+                <TextView
+                    android:id="@+id/malzemeler"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Malzemeler"
+                    android:textSize="19sp"
+
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/malzemeGetir"
+
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_marginTop="40dp"
+                    android:text="Burada Malzemeler var."
+
+                    android:textSize="17sp"
+                    tools:ignore="MissingConstraints" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="4dp"
+                app:cardPreventCornerOverlap="false">
+
+                <TextView
+                    android:id="@+id/tariftext"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Tarif"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/yemekDetay"
+
+
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_marginTop="40dp"
+                    android:text="Burada Yemek tarifi var."
+
+                    android:textSize="17sp"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/basdas"
+                android:layout_width="388dp"
+                android:layout_height="84dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="#FFFFFF"
+
+                android:text="Besin Degeri"
+                android:textSize="20sp"
+
+
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
